@@ -9,6 +9,6 @@ import org.springframework.web.bind.annotation.RestController
 class HelloWorldController {
     @RequestMapping("/hello")
     fun greeting(
-        @RequestParam(value = "name", defaultValue = "name") name: String?
+        @RequestParam(value = "name", defaultValue = "name") name: String
     ) = "{\"message\":\"Hello, $name\"}"
 }
